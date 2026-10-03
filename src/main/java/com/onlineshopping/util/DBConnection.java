@@ -9,7 +9,7 @@ public class DBConnection {
     // ---- Update these to match your local MySQL setup ----
     private static final String URL = "jdbc:mysql://localhost:3306/online_shopping_db?useSSL=false&serverTimezone=UTC";
     private static final String USER = "root";
-    private static final String PASSWORD = "vasi"; // change to your MySQL password
+    private static final String PASSWORD = " "; // change to your MySQL password
     // --------------------------------------------------------
 
     static {
