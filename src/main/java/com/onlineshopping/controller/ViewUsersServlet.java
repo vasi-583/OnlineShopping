@@ -18,6 +18,6 @@ public class ViewUsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("users", userDAO.getAllCustomers());
-        req.getRequestDispatcher("admin/view-users.jsp").forward(req, resp);
+        req.getRequestDispatcher("/admin/view-users.jsp").forward(req, resp);
     }
 }

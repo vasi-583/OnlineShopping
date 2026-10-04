@@ -1,0 +1,30 @@
+<%@ page import="com.onlineshopping.dao.ProductDAO" %>
+<%@ page import="com.onlineshopping.model.Product" %>
+<%@ page import="java.util.List" %>
+<%
+    ProductDAO productDAO = new ProductDAO();
+    List<Product> products = productDAO.getAllProducts();
+%>
+<div class="card">
+    <h3 style="margin-bottom:14px;">All Products</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th></th></tr>
+        </thead>
+        <tbody>
+        <% for (Product p : products) { %>
+            <tr>
+                <td><%= p.getName() %></td>
+                <td><%= p.getCategory() %></td>
+                <td>Rs. <%= p.getPrice() %></td>
+                <td><%= p.getQuantity() %></td>
+                <td>
+                    <a href="updateProduct?id=<%= p.getId() %>" class="btn btn-secondary">Edit</a>
+                    <a href="deleteProduct?id=<%= p.getId() %>" class="btn btn-danger"
+                       onclick="return confirm('Delete this product?');">Delete</a>
+                </td>
+            </tr>
+        <% } %>
+        </tbody>
+    </table>
+</div>

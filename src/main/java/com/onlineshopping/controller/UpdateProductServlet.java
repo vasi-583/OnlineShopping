@@ -41,7 +41,7 @@ public class UpdateProductServlet extends HttpServlet {
             resp.sendRedirect("admin-dashboard.jsp?msg=updated");
         } catch (Exception e) {
             req.setAttribute("error", "Invalid product data: " + e.getMessage());
-            req.getRequestDispatcher("admin/update-product.jsp").forward(req, resp);
+            req.getRequestDispatcher("/admin/update-product.jsp").forward(req, resp);
         }
     }
 }

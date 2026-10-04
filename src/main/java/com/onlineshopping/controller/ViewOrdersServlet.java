@@ -18,6 +18,6 @@ public class ViewOrdersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("orders", orderDAO.getAllOrders());
-        req.getRequestDispatcher("admin/view-orders.jsp").forward(req, resp);
+        req.getRequestDispatcher("/admin/view-orders.jsp").forward(req, resp);
     }
 }
