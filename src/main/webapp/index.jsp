@@ -15,11 +15,11 @@
         </div>
     </div>
     <div class="container">
-        <div class="card" style="text-align:center; padding:60px 20px;">
-            <h1>Welcome to Online Shopping</h1>
-            <p style="margin-top:10px; color:#64748b;">Browse products, add them to your cart, and checkout securely.</p>
-            <div style="margin-top:24px;">
-                <a href="login.jsp" class="btn">Login</a>
+        <div class="hero">
+            <h1>Shop smarter, shop online</h1>
+            <p>Browse a curated catalog, add what you love to your cart, and checkout securely in just a few clicks.</p>
+            <div>
+                <a href="login.jsp" class="btn" style="background:#fff; color:var(--primary-dark); margin-right:10px;">Login</a>
                 <a href="register.jsp" class="btn btn-secondary">Create Account</a>
             </div>
         </div>

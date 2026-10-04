@@ -38,8 +38,8 @@
                     <input type="number" name="quantity" required>
                 </div>
                 <div class="form-group">
-                    <label>Image filename (e.g. product.jpg)</label>
-                    <input type="text" name="imagePath">
+                    <label>Image URL</label>
+                    <input type="text" name="imagePath" placeholder="https://example.com/image.jpg">
                 </div>
                 <button type="submit" class="btn btn-full">Add Product</button>
             </form>

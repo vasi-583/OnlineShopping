@@ -33,6 +33,8 @@
             <% for (Product p : products) { %>
                 <div class="product-card">
                     <span class="cat-tag"><%= p.getCategory() %></span>
+                    <img src="<%= p.getImagePath() %>" alt="<%= p.getName() %>" class="product-img"
+     onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
                     <h3><%= p.getName() %></h3>
                     <div class="desc"><%= p.getDescription() %></div>
                     <div class="price">Rs. <%= p.getPrice() %></div>

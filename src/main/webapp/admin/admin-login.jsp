@@ -25,6 +25,10 @@
         <p style="margin-top:14px; text-align:center; font-size:13px; color:#94a3b8;">
             Default: admin / admin123
         </p>
+        <p> 
+        <p style= "margin-top:10px; text-align:center; font-size:13px; color:#94a3b8;">
+        <a href="<%= request.getContextPath() %>/login.jsp" class="btn-secondary btn-full">Customer Login</a>
+        </p>
     </div>
 </body>
 </html>
